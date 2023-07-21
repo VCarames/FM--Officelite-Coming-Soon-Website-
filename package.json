@@ -1,0 +1,11 @@
+{
+  "name": "fm--officelite",
+  "version": "1.0.0",
+  "description": "Officelite - a sleek and elegant \"coming soon\" website for the fictional company.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
