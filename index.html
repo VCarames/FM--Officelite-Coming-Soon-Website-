@@ -7,7 +7,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;500;700;800;900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap"
       rel="stylesheet"
     />
     <script src="./src/js/index.js" defer=""></script>
@@ -31,10 +31,10 @@
         <div class="intro-section__container intro-section__container--home">
           <img src="./src/assets/home/illustration-charts.svg" alt="" />
           <div class="intro-section__content intro-section__content--home">
-            <h1 class="intro-section__heading">
+            <h1 class="intro-section__heading section__heading">
               A simple solution to complex tasks is coming soon
             </h1>
-            <p class="intro-section__text">
+            <p class="intro-section__text section__text">
               Say goodbye to inefficient juggling of multiple apps, teams, and
               projects. Officelite is the new collaboration platform built with
               an intuitive interface to improve productivity.
@@ -50,11 +50,15 @@
         <div class="plans-section__container">
           <div class="plans-section__plan plan--basic">
             <div class="plans-section__plan-content">
-              <h3 class="plans-section__plan-type">Basic</h3>
-              <p class="plans-section__plan-price">Free</p>
-              <p>Up to 5 users for free</p>
+              <h3 class="plans-section__plan-type plan__heading">Basic</h3>
+              <p class="plans-section__plan-price plan__price">Free</p>
+              <p class="plans-section__plan-text plan__text">
+                Up to 5 users for free
+              </p>
             </div>
-            <ul class="plans-section__plan-features features--basic">
+            <ul
+              class="plans-section__plan-features plan__features features--basic"
+            >
               <li>Basic document collaboration</li>
               <li>2 GB storage</li>
               <li>Great security and support</li>
@@ -67,11 +71,15 @@
 
           <div class="plans-section__plan plan--pro">
             <div class="plans-section__plan-content">
-              <h3 class="plans-section__plan-type">Pro</h3>
-              <p class="plans-section__plan-price">$9.99</p>
-              <p>Per user, billed monthly</p>
+              <h3 class="plans-section__plan-type plan__heading">Pro</h3>
+              <p class="plans-section__plan-price plan__price">$9.99</p>
+              <p class="plans-section__plan-text plan__text">
+                Per user, billed monthly
+              </p>
             </div>
-            <ul class="plans-section__plan-features features--pro">
+            <ul
+              class="plans-section__plan-features plan__features features--pro"
+            >
               <li>All essential integrations</li>
               <li>50 GB storage</li>
               <li>More control and insights</li>
@@ -84,11 +92,15 @@
 
           <div class="plans-section__plan plan--ultimate">
             <div class="plans-section__plan-content">
-              <h3 class="plans-section__plan-type">Ultimate</h3>
-              <p class="plans-section__plan-price">$19.99</p>
-              <p>Per user, billed monthly</p>
+              <h3 class="plans-section__plan-type plan__heading">Ultimate</h3>
+              <p class="plans-section__plan-price plan__price">$19.99</p>
+              <p class="plans-section__plan-text plan__text">
+                Per user, billed monthly
+              </p>
             </div>
-            <ul class="plans-section__plan-features features--ultimate">
+            <ul
+              class="plans-section__plan-features plan__features features--ultimate"
+            >
               <li>Robust work management</li>
               <li>100 GB storage</li>
               <li>VIP support</li>
@@ -109,24 +121,20 @@
           <div class="countdown__timer">
             <ul class="countdown__list">
               <li class="countdown__item">
-                <p class="countdown__text">
-                  <span class="item__days"></span> days
-                </p>
+                <span class="countdown__number"></span>
+                <span class="countdown__text"></span>
               </li>
               <li class="countdown__item">
-                <p class="countdown__text">
-                  <span class="item__hours"></span> hours
-                </p>
+                <span class="countdown__number"></span>
+                <p class="countdown__text">hours</p>
               </li>
               <li class="countdown__item">
-                <p class="countdown__text">
-                  <span class="item__minutes"></span> min
-                </p>
+                <span class="countdown__number"></span>
+                <p class="countdown__text">min</p>
               </li>
               <li class="countdown__item">
-                <p class="countdown__text">
-                  <span class="item__seconds"></span> sec
-                </p>
+                <span class="countdown__number"></span>
+                <p class="countdown__text">sec</p>
               </li>
             </ul>
           </div>
