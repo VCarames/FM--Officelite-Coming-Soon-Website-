@@ -1,0 +1,33 @@
+.btn {
+  min-height: 2.75rem;
+  min-width: 10ch;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: var(--fs-16);
+  font-weight: var(--fw-700);
+  line-height: 1.75; /* 28px */
+  text-align: center;
+  line-height: 1.1;
+
+  padding: 0.88rem 2.56rem;
+
+  border-radius: 1.75rem;
+}
+
+.btn--blue {
+  color: var(--neutral-clr-one);
+  background: var(--primary-clr-two);
+}
+
+.btn--gray {
+  color: var(--primary-clr-two);
+  background: var(--neutral-clr-four);
+}
+
+.btn--white {
+  color: var(--primary-clr-two);
+  background: var(--neutral-clr-one);
+}
