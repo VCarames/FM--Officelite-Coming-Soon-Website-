@@ -1,9 +1,10 @@
 .header {
-  max-width: 90rem;
+  max-width: 1186px;
   display: flex;
   justify-content: center;
 
   padding: 2.88rem 1.25rem 1.25rem 1.25rem;
+  margin-inline: auto;
 }
 
 @media (min-width: 43.75rem) {
@@ -17,6 +18,7 @@
 
 @media (min-width: 62.5rem) {
   .header {
-    padding: 5.13rem 2.44rem 1.25rem 2.44rem;
+    padding: 81px 39px 1.25rem 39px;
+    margin-bottom: 36px;
   }
 }
