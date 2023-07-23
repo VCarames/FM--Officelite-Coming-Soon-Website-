@@ -5,3 +5,11 @@
 
   padding: 46px 20px 20px 20px;
 }
+
+@media (min-width: 43.75rem) {
+  .header {
+    justify-content: start;
+
+    padding: 72px 39px 20px 39px;
+  }
+}
