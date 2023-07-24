@@ -3,6 +3,14 @@
   display: grid;
   gap: 2.19rem;
 
-  padding: 0 1.56rem 0 1.56rem;
+  padding: 0 1.56rem 0.63rem 1.56rem;
   margin-inline: auto;
+}
+
+@media (min-width: 43.75rem) {
+  .plans-section__container {
+    gap: 1.5rem;
+
+    padding: 0 2.5rem 0 2.44rem;
+  }
 }

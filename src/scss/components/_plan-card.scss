@@ -14,6 +14,13 @@
   box-shadow: 0 3.13rem 3.13rem -1.56rem var(--box-shadow-two);
 
   &-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    grid-area: content;
+
     margin-bottom: 3.5rem;
   }
 
@@ -32,7 +39,13 @@
     align-items: center;
     gap: 1rem;
 
+    grid-area: features;
+
     margin-bottom: 2rem;
+  }
+
+  &-btn {
+    grid-area: btn;
   }
 }
 
@@ -56,4 +69,41 @@
 .features--pro {
   color: var(--neutral-clr-one);
   opacity: 0.75;
+}
+
+@media (min-width: 43.75rem) {
+  .plans-section__plan {
+    display: grid;
+    grid-template-areas:
+      "content features"
+      "btn features";
+    justify-content: space-between;
+
+    padding: 2.94rem 3rem 3.06rem 3.06rem;
+
+    &-content {
+      align-items: start;
+
+      margin-bottom: 1.69rem;
+    }
+
+    &-type {
+      margin-bottom: 0.63rem;
+    }
+
+    &-price {
+      margin-bottom: 0.44rem;
+    }
+
+    &-features {
+      align-items: start;
+      gap: 1rem;
+
+      margin-bottom: 1rem;
+    }
+  }
+
+  .features--pro {
+    margin-right: 3.25rem;
+  }
 }
