@@ -10,12 +10,12 @@
       "content";
     justify-items: center;
     align-items: center;
-    gap: 4rem;
+    gap: 2.13rem;
 
     margin-inline: auto;
 
     & img {
-      max-width: 10.69rem;
+      max-width: 11.88rem;
 
       justify-self: center;
       grid-area: illustration;
@@ -25,7 +25,7 @@
   &__content {
     display: flex;
     flex-direction: column;
-    gap: 1.5rem;
+    gap: 1.56rem;
     grid-area: content;
 
     text-align: center;

@@ -1,0 +1,59 @@
+.plans-section__plan {
+  display: grid;
+  grid-template-areas:
+    "content"
+    "features"
+    "btn";
+
+  text-align: center;
+
+  border-radius: 0.81rem;
+
+  padding: 2.5rem 3.31rem 2.5rem 3.31rem;
+
+  box-shadow: 0 3.13rem 3.13rem -1.56rem var(--box-shadow-two);
+
+  &-content {
+    margin-bottom: 3.5rem;
+  }
+
+  &-type {
+    margin-bottom: 2.31rem;
+  }
+
+  &-price {
+    margin-bottom: 0.75rem;
+  }
+
+  &-features {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+
+    margin-bottom: 2rem;
+  }
+}
+
+.plan--basic,
+.plan--ultimate {
+  color: var(--primary-clr-one);
+  background: var(--neutral-clr-one);
+}
+
+.plan--pro {
+  color: var(--neutral-clr-one);
+  background: var(--primary-clr-two);
+}
+
+.features--basic,
+.features--ultimate {
+  color: var(--neutral-clr-three);
+  opacity: 0.75;
+}
+
+.features--pro {
+  color: var(--neutral-clr-one);
+  opacity: 0.75;
+}
