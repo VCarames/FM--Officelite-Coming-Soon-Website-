@@ -39,7 +39,7 @@
               </p>
             </div>
 
-            <div class="countdown">
+            <div class="countdown countdown--signup">
               <p class="countdown__heading countdown__heading--signup">Coming <span>4 Nov 2023</span></p>
               <div class="countdown__timer">
                 <ul class="countdown__list">
@@ -63,13 +63,13 @@
               </div>
             </div>
 
-        <div class="signup__content">
-          <form action="" class="signup__form" novalidate>
+        <div class="signup-container">
+          <form action="" class="signup-container__form" id="signup__form" novalidate>
             <input
               type="text"
               name="name"
               id="name"
-              class="signup__form-name"
+              class="signup-container__form-input signup-container__form--name"
               placeholder="Name"
               aria-describedby="error__name"
             />
@@ -83,7 +83,7 @@
               type="email"
               name="email"
               id="email"
-              class="signup__form-email"
+              class="signup-container__form-input signup-container__form--email"
               placeholder="Email Address"
               aria-describedby="error__email"
             />
@@ -93,7 +93,7 @@
               aria-live="assertive"
             ></p>
 
-            <select name="plan" id="package" class="signup__form-select">
+            <select name="plan" id="package" class="signup-container__form-select">
               <option value="basic">
                 <p>Basic Pack <span>Free</span></p>
               </option>
@@ -108,7 +108,7 @@
               type="tel"
               name="phone"
               id="phone"
-              class="signup__form-phone"
+              class="signup-container__form-input signup-container__form--phone"
               placeholder="Phone Number"
               aria-describedby="error__phone"
               inputmode="numeric"
@@ -127,7 +127,7 @@
               name="company"
               placeholder="Company"
               id="company"
-              class="signup__form-company"
+              class="signup-container__form-input signup-container__form--company"
               aria-describedby="error__company"
             />
             <p
@@ -136,7 +136,7 @@
               aria-live="assertive"
             ></p>
 
-            <button type="submit" class="signup__input-btn btn btn--blue">
+            <button type="submit" class="signup-container__form-btn btn btn--blue">
               Get on the list
             </button>
           </form>
