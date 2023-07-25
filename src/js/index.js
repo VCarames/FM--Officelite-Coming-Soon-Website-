@@ -27,3 +27,78 @@ function calculateCountdown() {
 }
 
 setInterval(calculateCountdown, 1000);
+
+// FORM
+const form = document.getElementById("signup__form");
+const nameInput = document.getElementById("name");
+const emailInput = document.getElementById("email");
+const phoneInput = document.getElementById("phone");
+const companyInput = document.getElementById("company");
+
+form.addEventListener("submit", function (event) {
+  event.preventDefault();
+
+  resetErrorMessages();
+
+  if (!nameInput.value.trim()) {
+    displayErrorMessage(nameInput, "Name cannot be blank.");
+  }
+
+  if (!isValidEmail(emailInput.value.trim())) {
+    displayErrorMessage(emailInput, "Please enter a valid email address.");
+  }
+
+  if (!isValidPhone(phoneInput.value.trim())) {
+    displayErrorMessage(phoneInput, "Please enter a valid phone number.");
+  }
+
+  if (!companyInput.value.trim()) {
+    displayErrorMessage(companyInput, "Company cannot be blank.");
+  }
+});
+
+nameInput.addEventListener("input", function () {
+  if (nameInput.value.trim()) {
+    resetErrorMessages();
+  }
+});
+
+emailInput.addEventListener("input", function () {
+  if (isValidEmail(emailInput.value.trim())) {
+    resetErrorMessages();
+  }
+});
+
+phoneInput.addEventListener("input", function () {
+  if (isValidPhone(phoneInput.value.trim())) {
+    resetErrorMessages();
+  }
+});
+
+companyInput.addEventListener("input", function () {
+  if (companyInput.value.trim()) {
+    resetErrorMessages();
+  }
+});
+
+function displayErrorMessage(inputElement, errorMessage) {
+  const errorElement = inputElement.nextElementSibling;
+  errorElement.textContent = errorMessage;
+}
+
+function resetErrorMessages() {
+  const errorElements = document.querySelectorAll(".error");
+  errorElements.forEach((errorElement) => {
+    errorElement.textContent = "";
+  });
+}
+
+function isValidEmail(email) {
+  const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  return emailRegex.test(email);
+}
+
+function isValidPhone(phone) {
+  const phoneRegex = /^\d{10}$/;
+  return phoneRegex.test(phone);
+}
