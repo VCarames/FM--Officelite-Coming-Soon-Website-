@@ -15,8 +15,22 @@
 
 @media (min-width: 43.75rem) {
   .footer {
-    padding: 103.08px 24px 103.04px 23.04px;
+    padding: 6.44rem 1.5rem 6.44rem 1.44rem;
+  }
+}
 
-    background: var(--primary-clr-three);
+@media (min-width: 62.5rem) {
+  .footer {
+    padding: 4.88rem 1.5rem 2.69rem 1.44rem;
+
+    &__content {
+      grid-template-columns: repeat(2, 1fr);
+      align-items: center;
+    }
+
+    &__btn {
+      justify-self: end;
+      transform: translateY(-23.04px);
+    }
   }
 }

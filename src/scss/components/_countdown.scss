@@ -6,8 +6,11 @@
 
   &__list {
     display: grid;
-    grid-template-columns: repeat(4, 4.5rem);
+    justify-content: center;
+    grid-template-columns: repeat(2, 4.5rem);
     gap: 0.88rem;
+
+    margin-bottom: 2.5rem;
   }
 
   &__item {
@@ -17,7 +20,7 @@
     border-radius: 0.25rem;
     background: var(--primary-clr-one);
 
-    margin-bottom: 2.5rem;
+    // margin-bottom: 2.5rem;
     padding: 0.56rem 0 0.44rem 0;
   }
 
@@ -27,6 +30,16 @@
 
   &__text {
     justify-self: center;
+  }
+}
+
+@media (min-width: 23.44rem) {
+  .countdown {
+    &__list {
+      display: grid;
+      grid-template-columns: repeat(4, 4.5rem);
+      gap: 0.88rem;
+    }
   }
 }
 
@@ -46,6 +59,21 @@
     &__item {
       margin-bottom: 3.06rem;
       padding: 1.75rem 0 1.44rem 0;
+    }
+  }
+}
+
+@media (min-width: 62.5rem) {
+  .countdown {
+    &__heading {
+      text-align: start;
+      margin-bottom: 3.08px;
+    }
+
+    &__list {
+      justify-content: start;
+
+      margin-bottom: 0;
     }
   }
 }

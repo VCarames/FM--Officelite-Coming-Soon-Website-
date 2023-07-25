@@ -4,12 +4,13 @@
     "content"
     "features"
     "btn";
+  justify-content: center;
 
-  text-align: center;
+  // text-align: center;
 
   border-radius: 0.81rem;
 
-  padding: 2.5rem 3.31rem 2.5rem 3.31rem;
+  padding: 2.5rem;
 
   box-shadow: 0 3.13rem 3.13rem -1.56rem var(--box-shadow-two);
 
@@ -73,13 +74,12 @@
 
 @media (min-width: 43.75rem) {
   .plans-section__plan {
-    display: grid;
     grid-template-areas:
       "content features"
       "btn features";
     justify-content: space-between;
 
-    padding: 2.94rem 3rem 3.06rem 3.06rem;
+    padding: 2.94rem 3rem 3.06rem 3rem;
 
     &-content {
       align-items: start;
@@ -110,14 +110,11 @@
 
 @media (min-width: 68.75rem) {
   .plans-section__plan {
-    display: grid;
     grid-template-areas:
       "content"
       "features"
       "btn";
     justify-content: center;
-
-    text-align: center;
 
     padding: 2.31rem 3rem 2.63rem 3rem;
 
