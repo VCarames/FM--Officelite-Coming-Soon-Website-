@@ -12,3 +12,11 @@
     margin-inline: auto;
   }
 }
+
+@media (min-width: 43.75rem) {
+  .footer {
+    padding: 103.08px 24px 103.04px 23.04px;
+
+    background: var(--primary-clr-three);
+  }
+}

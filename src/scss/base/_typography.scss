@@ -88,10 +88,17 @@ input {
   line-height: 1.75; /* 28px */
 }
 
+@media (min-width: 43.75rem) {
+  .countdown__number {
+    font-size: var(--fs-56);
+    line-height: 0.86; /*  48px */
+  }
+}
+
 @media (min-width: 62.5rem) {
   .section__heading {
     font-size: var(--fs-56);
-    line-height: 1.14; /* 64px */
+    line-height: 1.14; /* 48px */
   }
 
   .section__text {
