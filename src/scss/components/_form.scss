@@ -1,0 +1,54 @@
+.signup-container {
+  width: 100%;
+
+  border-radius: 0.81rem;
+  background: #fff;
+
+  padding: 1.5rem;
+
+  box-shadow: 0 3.13rem 3.13rem -1.56rem rgba(75, 92, 154, 0.25);
+
+  &__form {
+    width: 100%;
+    display: grid;
+    gap: 14px;
+
+    &-input {
+      width: 100%;
+      padding: 0 0 0.94rem 1rem;
+      border-bottom: solid 1px hsla(226, 14%, 52%, 0.5);
+    }
+
+    &-select {
+      width: 100%;
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      -ms-appearance: none;
+      appearance: none;
+      padding: 0 0 1.38rem 1rem;
+
+      border-radius: 0;
+
+      border-bottom: solid 0.06rem hsla(226, 14%, 52%, 0.5);
+
+      & option p {
+        color: hsla(227, 22%, 26%, 1);
+
+        & span {
+          opacity: 0.4;
+        }
+      }
+    }
+
+    &-btn {
+      margin-top: 0.88rem;
+    }
+  }
+}
+
+.error {
+  color: var(--error-clr);
+  font-size: var(--fs-16);
+  font-weight: var(--fw-400);
+  line-height: 1.75; /* 28px */
+}

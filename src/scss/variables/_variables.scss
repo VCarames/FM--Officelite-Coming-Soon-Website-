@@ -1,7 +1,7 @@
 :root {
   --primary-clr-one: hsla(227, 22%, 26%);
   --primary-clr-two: hsl(228, 100%, 66%);
-  --primary-clr-three: hsl(229, 22%, 19%);
+  --primary-clr-three: hsl(231, 7%, 21%);
 
   --neutral-clr-one: hsl(0, 0%, 100%);
   --neutral-clr-two: hsla(0, 0%, 98%, 1);
@@ -10,6 +10,8 @@
 
   --box-shadow-one: hsla(227, 52%, 50%, 0.25);
   --box-shadow-two: hsla(227, 34%, 45%, 0.25);
+
+  --error-clr: hsl(0, 83%, 65%);
 
   --ff: "Kumbh Sans", sans-serif;
 
