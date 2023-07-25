@@ -1,0 +1,14 @@
+.footer {
+  padding: 5.63rem 1.5rem 6.44rem 1.44rem;
+
+  background: var(--primary-clr-three);
+
+  &__content {
+    max-width: 69.38rem;
+
+    display: grid;
+    justify-content: center;
+
+    margin-inline: auto;
+  }
+}
