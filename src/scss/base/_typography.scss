@@ -28,6 +28,10 @@
   & span {
     color: var(--primary-clr-two);
   }
+
+  &--signup {
+    color: var(--primary-clr-one);
+  }
 }
 
 .countdown__number {
@@ -79,6 +83,10 @@
   line-height: 2.33; /* 28px */
 
   opacity: 0.5;
+
+  &--signup {
+    color: var(--primary-clr-one);
+  }
 }
 
 input {

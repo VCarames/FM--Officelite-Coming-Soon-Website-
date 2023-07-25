@@ -29,6 +29,14 @@
     grid-area: content;
 
     text-align: center;
+
+    &--signup {
+      gap: 63px;
+    }
+    &-text {
+      display: grid;
+      gap: 18px;
+    }
   }
 
   &__btn {

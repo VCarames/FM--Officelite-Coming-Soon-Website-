@@ -20,12 +20,19 @@
     border-radius: 0.25rem;
     background: var(--primary-clr-one);
 
-    // margin-bottom: 2.5rem;
     padding: 0.56rem 0 0.44rem 0;
+
+    &--signup {
+      background: var(--neutral-clr-four);
+    }
   }
 
   &__number {
     color: var(--neutral-clr-one);
+
+    &--signup {
+      color: var(--primary-clr-two);
+    }
   }
 
   &__text {
