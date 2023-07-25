@@ -32,10 +32,14 @@
 
     &-text {
       display: grid;
-      gap: 1.13rem;
+      gap: 18.08px;
 
       margin-bottom: 2.38rem;
     }
+  }
+
+  &__text--signup {
+    max-width: 60ch;
   }
 
   &__btn {
@@ -48,6 +52,10 @@
     padding: 0 1.5rem 0 2.44rem;
     margin-bottom: 8.75rem;
 
+    &--signup {
+      padding: 0 1.5rem 0 1.5rem;
+    }
+
     &__container {
       grid-template-columns: repeat(2, 1fr);
       grid-template-areas: " content illustration";
@@ -58,6 +66,11 @@
         max-width: 19.5rem;
         justify-self: end;
       }
+
+      &--signup {
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-areas: " content ";
+      }
     }
 
     &__content {
@@ -65,6 +78,20 @@
       gap: 1.63rem;
 
       text-align: start;
+
+      &-text {
+        display: grid;
+        gap: 1.63rem;
+
+        margin-bottom: 2.38rem;
+      }
+
+      &--signup {
+        align-items: center;
+        gap: 0.13rem;
+
+        text-align: center;
+      }
     }
   }
 }

@@ -1,5 +1,6 @@
 .signup-container {
   width: 100%;
+  max-width: 445px;
 
   border-radius: 0.81rem;
   background: #fff;
@@ -10,6 +11,7 @@
 
   &__form {
     width: 100%;
+
     display: grid;
     gap: 14px;
 
@@ -51,4 +53,24 @@
   font-size: var(--fs-16);
   font-weight: var(--fw-400);
   line-height: 1.75; /* 28px */
+}
+
+@media (min-width: 43.75rem) {
+  .signup-container {
+    &__form {
+      gap: 1rem;
+
+      &-input {
+        padding: 0 0 0.94rem 2.13rem;
+      }
+
+      &-select {
+        padding: 0 0 1.38rem 2.13rem;
+      }
+
+      &-btn {
+        margin-top: 0.69rem;
+      }
+    }
+  }
 }
