@@ -107,3 +107,40 @@
     margin-right: 3.25rem;
   }
 }
+
+@media (min-width: 68.75rem) {
+  .plans-section__plan {
+    display: grid;
+    grid-template-areas:
+      "content"
+      "features"
+      "btn";
+    justify-content: center;
+
+    text-align: center;
+
+    padding: 2.31rem 3rem 2.63rem 3rem;
+
+    &-content {
+      align-items: center;
+
+      margin-bottom: 3.56rem;
+    }
+
+    &-type {
+      margin-bottom: 2.25rem;
+    }
+
+    &-price {
+      margin-bottom: 0.82rem;
+    }
+
+    &-features {
+      align-items: center;
+      gap: 15px;
+
+      margin-right: 0;
+      margin-bottom: 2.25rem;
+    }
+  }
+}
